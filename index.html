@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1>Asma ALNOUNOU</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#skills" data-after="skills">skills</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navList = document.querySelector(".nav-list ul");
+  
+    hamburger.addEventListener("click", () => {
+      navList.classList.toggle("active");
+      hamburger.classList.toggle("active"); // This will animate the bars
+    });
+  </script>
+  
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>I am Asma Alnounou <span></span></h1>
+        <h1>A Software Engener <span></span></h1>
+        <a href="AsmaYaser_Alnounou_CV.pdf" class="cta">Download CV</a>
+
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/asma-alnounou" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+
+        <!-- GitHub Icon -->
+        <a href="https://github.com/asmaalnounou" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="PIC1.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        
+        <p>I am a passionate Software Engineering student at the University of Jeddah 
+           with a strong focus on programming, UI/UX design, web development,
+           and requirements engineering. Always eager to learn and grow, I actively seek 
+           opportunities to expand my skills through hands-on projects and specialized courses, 
+           including  Programming,  AI ,and GAME development . As a member of the Technology 
+            and Innovation Committee in the Drone Student Club, I contribute to cutting-edge research and 
+            development in drone technology, blending creativity with technical expertise to drive innovation.</p>
+           
+           
+            <P>My goal is to leverage my skills to develop
+               innovative, user-centric software solutions
+                that enhance digital experiences. I aspire
+                 to work on projects that integrate cutting-edge
+                  technologies like AI and automation, making a real 
+                  impact in the tech industry. Through continuous learning and
+                   collaboration, I aim to become a well-rounded software engineer,
+                    solving complex challenges and shaping the future of technology.</P>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+<!-- Skills Section -->
+<section id="skills">
+  <div class="skills container">
+      <div class="skills-top">
+          <h1 class="section-title">Skills</h1>
+          <p>Throughout my journey in software engineering, I have gained a diverse set of technical and creative
+              skills through academic learning, hands-on projects, and continuous exploration of new technologies.
+              Below are some of the key skills I have developed, helping me build innovative and user-centric
+              solutions.</p>
+      </div>
+      <div class="skills-bottom">
+          <div class="skills-item">
+              <div class="icon">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Technical Skills Icon">
+              </div>
+              <h2>Technical Skills</h2>
+              <p>C, Java, and Python coding languages<br>
+                  Web development: HTML, CSS, and JavaScript<br>
+                  UX/UI design and implementation: Figma
+              </p>
+          </div>
+
+          <div class="skills-item">
+              <div class="icon">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Software Engineering Icon">
+              </div>
+              <h2>Software Engineering</h2>
+              <p>Agile methodologies understanding<br>
+                  Scrum project management<br>
+                  Software architecture<br>
+                  Requirements Engineering
+              </p>
+          </div>
+
+          <div class="skills-item">
+              <div class="icon">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Tools Icon">
+              </div>
+              <h2>Tools</h2>
+              <p>Android Studio competency<br>
+                  Lucidchart<br>
+                  Firebase usage<br>
+                  GitHub
+              </p>
+          </div>
+
+          <div class="skills-item">
+              <div class="icon">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Soft Skills Icon">
+              </div>
+              <h2>Soft Skills</h2>
+              <p>Fast learner<br>
+                  Critical thinking<br>
+                  Documentation proficiency<br>
+                  Teamwork skill
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Skills Section end -->
+
+
+ <!-- Projects Section -->
+<section id="projects">
+  <div class="projects container">
+      <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+          <div class="project-item">
+              <div class="project-info">
+                  <h1>GoodReads UI/UX Redesign </h1>
+                  <h2>Human Computer Interaction course</h2>
+                  <p> Redesigned an existing application to enhance user experience 
+                    and interface design, applying HCI principles. The project seeks to redesign the user experience by elevating it to a more interactive 
+                    and community-centric level. The overarching vision is to create a dynamic platform that not 
+                    only provides access to an extensive digital library but also cultivates a thriving community of 
+                    readers. </p>
+              </div>
+              <div class="project-img">
+                  <img src="project1.png" alt="Project 1">
+              </div>
+          </div>
+          <div class="project-item">
+              <div class="project-info">
+                <h1>Smart Logistics Optimization Application</h1>
+                <h2>Mobile Programming and Process Models courses</h2>
+                <p> an Android app built with Android Studio and Firebase to enhance logistics 
+                  tracking in Saudi Arabia. It enables real-time tracking, route optimization,
+                   and efficient fleet management for improved delivery efficiency.</p>
+            </div>
+            <div class="project-img">
+                <img src="project2.png" alt="Project 2">
+              </div>
+          </div>
+          <div class="project-item">
+              <div class="project-info">
+                  <h1>Smart Cart</h1>
+                  <h2>Software Fundamentals course</h2>
+                  <p>We tried in 
+                    our project, based on the interviews, to handle a real-life problem that matters to clients and 
+                    managers. Our main goals are to make things more secure, improve the customer experience, 
+                    and help supermarket owners by offering accurate services.</p>
+              </div>
+              <div class="project-img">
+                  <img src="project3.png" alt="Project 3">
+              </div>
+          </div>
+          <div class="project-item">
+              <div class="project-info">
+                  <h1>Safety Assistance App</h1>
+                  <h2>Project Management course</h2>
+                  <p>we introduce the 
+                    Emergency Safety and Assistance app project plan. This innovative mobile application is designed to 
+                    provide users with assistance during emergency situations.</p>
+              </div>
+              <div class="project-img">
+                  <img src="project4.png" alt="Project 4">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- End Projects Section -->
+
+
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon">
+                    <img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="Phone Icon">
+                </div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>+966 539 363 696</h2>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">
+                    <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="Email Icon">
+                </div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>asmaalnounou@gmail.com</h2>
+                    <h2>2211010@uj.edu.sa</h2>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">
+                    <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="Location Icon">
+                </div>
+                <div class="contact-info">
+                    <h1>Address</h1>
+                    <h2>JEDDAH, SAUDI ARABIA</h2>
+                </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">
+                <a href="https://www.linkedin.com/in/asma-alnounou" target="_blank">
+                  <i class="fab fa-linkedin fa-"></i>
+                </a>
+              </div>
+              <div class="contact-info">
+                  <h1>LinkedIN</h1>
+                  <h2>asma alnounou</h2>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+  <!-- End Contact Section -->
+   
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>Asma Alnounou</h1>
+      </div>
+      
+      <h3> Copyright © 2025 </h3>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+</body>
+
+</html>
